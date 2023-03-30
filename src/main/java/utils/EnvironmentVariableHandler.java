@@ -17,8 +17,8 @@ public class EnvironmentVariableHandler {
 
     public static String getAccessToken(){
         String accessToken;
-        if (System.getenv()==null){
-            accessToken = "6e398124a1dd58b3e41e21ec5e41a269137a8771586f4fc839091bcc99606ed3";
+        if (System.getenv("ACCESS_TOKEN")==null){
+            accessToken = "634dc247bf42f31fa4c84a4a235f0d3358588fd48d7221e21ada77e7f126f946";
         } else {
             accessToken = System.getenv("ACCESS_TOKEN");
         }

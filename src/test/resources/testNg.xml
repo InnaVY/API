@@ -7,5 +7,9 @@
             <class name="UsersTests"/>
         </classes>
     </test>
-
+<listeners>
+    <listener class-name="utils.RetryListener"/>
+    <listener class-name="utils.SkippedTestsListener"/>
+    <listener class-name="utils.TestInfoListener"/>
+</listeners>
 </suite>

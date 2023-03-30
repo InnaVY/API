@@ -28,7 +28,6 @@ private UsersApi(String baseUrl){
 //        auth.setPassword("provided_password");
 
     PreemptiveOAuth2HeaderScheme auth = new PreemptiveOAuth2HeaderScheme();
-
     auth.setAccessToken(getAccessToken());
     spec = new RequestSpecBuilder()
             .addFilter(new AllureRestAssured())
